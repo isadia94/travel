@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background-image: url("./images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.055);
+}
+
+.logo {
+  font-family: "Carattere", cursive;
+}
+
+.hero__text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero__text > h1 {
+  width: 290px;
+}
